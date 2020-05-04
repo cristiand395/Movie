@@ -8,7 +8,7 @@
         .container{
             display: grid;
             /* grid-template-columns: 25% 300px 25%; */
-            grid-template: 100px 200px 300px / 25% 300px 25%;
+            grid-template: repeat(4, minmax(200px, 1fr)) / repeat(3, minmax(200px, 1fr));
             /* border: 1px solid red; */
             grid-gap: 20px 30px;
         }
@@ -19,7 +19,7 @@
         .grid-grid{
             background-color: green;
             display: grid;
-            grid-template: 50% 50% 50% / 25% 25% 25%;
+            grid-template: repeat(3, 1fr) / repeat(3, minmax(15px, 1fr));
             text-align: center;
             padding: 5px;
             grid-gap: 10px 15px;
