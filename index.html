@@ -7,11 +7,13 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: 25% 50% 25%;
+            /* grid-template-columns: 25% 300px 25%; */
+            grid-template: 100px 200px 300px / 25% 300px 25%;
             /* border: 1px solid red; */
         }
         .grid{
             border: 1px solid red;
+            padding: 10px;
         }
     </style>
 </head>
@@ -29,6 +31,6 @@
         <div class="grid">Grid #10</div>
         <div class="grid">Grid #11</div>
         <div class="grid">Grid #12</div>
-    </section>  
+    </section> 
 </body>
 </html>
