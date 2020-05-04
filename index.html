@@ -15,6 +15,16 @@
             border: 1px solid red;
             padding: 10px;
         }
+        .grid-grid{
+            background-color: green;
+            display: grid;
+            grid-template: 25% 50% 25% / 25% 50% 25%;
+            text-align: center;
+        }
+        .sub_grid{
+            background-color: lightblue;
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +32,17 @@
         <div class="grid">Grid #1</div>
         <div class="grid">Grid #2</div>
         <div class="grid">Grid #3</div>
-        <div class="grid">Grid #4</div>
+        <div class="grid-grid">
+            <div class="sub_grid">sub grid 1</div>
+            <div class="sub_grid">sub grid 2</div>
+            <div class="sub_grid">sub grid 3</div>
+            <div class="sub_grid">sub grid 4</div>
+            <div class="sub_grid">sub grid 5</div>
+            <div class="sub_grid">sub grid 6</div>
+            <div class="sub_grid">sub grid 7</div>
+            <div class="sub_grid">sub grid 8</div>
+            <div class="sub_grid">sub grid 9</div>
+        </div>
         <div class="grid">Grid #5</div>
         <div class="grid">Grid #6</div>
         <div class="grid">Grid #7</div>
