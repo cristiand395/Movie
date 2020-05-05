@@ -7,29 +7,18 @@
     <style>
         .container{
             display: grid;
-            /* grid-template-columns: 25% 300px 25%; */
-            grid-template: repeat(2, 1fr) / repeat(7, 1fr);
-            /* border: 1px solid red; */
-            grid-gap: 10px 10px;
-            height: 100vh;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 5px;
+            height: 80vh;
+            justify-content: center;
+            align-content: center;
         }
         .grid{
             border: 1px solid red;
             /* padding: 10px; */
         }
-        ._1{
-            grid-column: 1 / span 3;
-            grid-row: 1 / span 2;
-
-        }
-        ._2{
-            grid-column: 4 / span 2;
-            grid-row: 1 / span 2;
-
-        }
-        ._3{
-            grid-column: 6 / span 2 ;
-        }
+        
     </style>
 </head>
 <body>
@@ -39,6 +28,10 @@
         <div class="grid _3">Grid #3</div>
         <div class="grid _4">Grid #4</div>
         <div class="grid _5">Grid #5</div>
+        <div class="grid _6">Grid #6</div>
+        <div class="grid _7">Grid #7</div>
+        <div class="grid _8">Grid #8</div>
+        <div class="grid _9">Grid #9</div>
 
     </section> 
 </body>
