@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 250px);
+            grid-gap: 5px;
+            justify-content: center;
+        }
+        .image{
+            border-radius: 5px;
+            padding: 5px;
+            align-content: center;
+        }
+        .image img{
+            max-width: 100%;
+            align-self: center;
+
+        }
+        .span1{
+            grid-row-end: span 1;
+        }
+        .span2{
+            grid-row-end: span 2;
+        }
+        .span3{
+            grid-row-end: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image span1">
+            <img src="images/image_1.jpg" alt="">
+        </div>
+        <div class="image span2">
+            <img src="images/image_2.jpg" alt="">
+        </div>
+        <div class="image span3">
+            <img src="images/image_3.jpg" alt="">
+        </div>
+        <div class="image span1">
+            <img src="images/image_1.jpg" alt="">
+        </div>
+        <div class="image span2">
+            <img src="images/image_2.jpg" alt="">
+        </div>
+        <div class="image span3">
+            <img src="images/image_3.jpg" alt="">
+        </div>
+        <div class="image span1">
+            <img src="images/image_1.jpg" alt="">
+        </div>
+        <div class="image span2">
+            <img src="images/image_2.jpg" alt="">
+        </div>
+        <div class="image span3">
+            <img src="images/image_3.jpg" alt="">
+        </div>
+        <div class="image span1">
+            <img src="images/image_1.jpg" alt="">
+        </div>
+        <div class="image span2">
+            <img src="images/image_2.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
