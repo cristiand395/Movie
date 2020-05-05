@@ -8,15 +8,31 @@
         .container{
             display: grid;
             /* grid-template-columns: 25% 300px 25%; */
-            grid-template: repeat(4, minmax(200px, 1fr)) / repeat(3, minmax(200px, 1fr));
+            grid-template: 10% 80% 10% / 200px 1fr;
             /* border: 1px solid red; */
-            grid-gap: 20px 30px;
+            grid-gap: 10px 10px;
+            grid-template-areas:"header header"
+                                "left content"
+                                "footer footer";
+            height: 100vh;
         }
         .grid{
             border: 1px solid red;
             /* padding: 10px; */
         }
-        .grid-grid{
+        .header{
+            grid-area: header;
+        }
+        .left{
+            grid-area: left;
+        }
+        .content{
+            grid-area: content;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        /* .grid-grid{
             background-color: green;
             display: grid;
             grid-template: repeat(3, 1fr) / repeat(3, minmax(15px, 1fr));
@@ -24,37 +40,19 @@
             padding: 5px;
             grid-gap: 10px 15px;
             overflow: auto;
-        }
-        .sub_grid{
+        } */
+        /* .sub_grid{
             background-color: lightblue;
             border: 1px solid red;
-        }
+        } */
     </style>
 </head>
 <body>
     <section class="container">
-        <div class="grid">Grid #1</div>
-        <div class="grid">Grid #2</div>
-        <div class="grid">Grid #3</div>
-        <div class="grid-grid">
-            <div class="sub_grid">sub grid 1</div>
-            <div class="sub_grid">sub grid 2</div>
-            <div class="sub_grid">sub grid 3</div>
-            <div class="sub_grid">sub grid 4</div>
-            <div class="sub_grid">sub grid 5</div>
-            <div class="sub_grid">sub grid 6</div>
-            <div class="sub_grid">sub grid 7</div>
-            <div class="sub_grid">sub grid 8</div>
-            <div class="sub_grid">sub grid 9</div>
-        </div>
-        <div class="grid">Grid #5</div>
-        <div class="grid">Grid #6</div>
-        <div class="grid">Grid #7</div>
-        <div class="grid">Grid #8</div>
-        <div class="grid">Grid #9</div>
-        <div class="grid">Grid #10</div>
-        <div class="grid">Grid #11</div>
-        <div class="grid">Grid #12</div>
+        <div class="grid header">Grid #1</div>
+        <div class="grid left">Grid #2</div>
+        <div class="grid content">Grid #3</div>
+        <div class="grid footer">Grid #5</div>
     </section> 
 </body>
 </html>
