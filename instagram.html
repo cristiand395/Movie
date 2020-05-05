@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+        }
+        .post_list{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            grid-gap: 10px;
+            justify-content: center;
+        }
+        .post{
+            cursor: pointer;
+            position: relative;
+            display: block;
+        }
+        .post_figure{
+            margin: 0;
+        }
+        .post_figure img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .post_overlay{
+            background: rgba(0,0,0, .6);
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        
+        }
+        .post:hover .post_overlay{
+            display: flex;
+        }
+        .post_likes{
+            width: 70px;
+            font-weight:bold;
+            margin: 10px;
+            display: inline-block;
+        }
+        .post_comments{
+            width: 70px;
+            font-weight:bold;
+            margin: 10px;
+            display: inline-block;
+        }
+        @media screen and (max-width: 768px){
+            .post_list{
+                grid-gap: 4px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="post_list">
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+        <a class="post">
+            <figure class="post_figure">
+                <img src="images/rtx.jpg" alt="" class="post_img">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1,600</span>
+                    <span class="post_comments">56</span>
+                </p>
+            </span>
+        </a>
+    </section>
+</body>
+</html>
