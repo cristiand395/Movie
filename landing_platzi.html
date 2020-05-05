@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzi</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        .hero{
+            background: rgb(31,62,81);
+            color: white;
+            padding: 32px 15px;
+            display: grid;
+            grid-template-columns: minmax(auto, 1024px);
+            justify-content: center;
+            padding: 32px 15px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 70px 1fr 293px;
+            grid-template-areas:  "badge title form"
+                        ". description form"
+                        ". countdown form";
+            grid-gap: 10px;
+        }
+        .badge {
+            grid-area: badge;
+        }
+        .badge img {
+            max-width: 70px;
+        }
+        .title {
+            grid-area: title;
+            font-size: 36px;
+            margin: 0px;
+            align-items: center;
+            display: flex;
+        }
+        .form { 
+            grid-area: form;
+            background: rgb(231,235,237);
+            padding: 1.5em;
+            text-align: center;
+            border-radius: 5px;
+            align-content: center;
+            margin: 0px 5px;
+        }
+        .description {
+            grid-area: description;
+            font-size: 18px;
+            margin: 0px
+        }
+        .description p {
+            margin: 0px;
+        }
+        .countdown {
+            grid-area: countdown;
+            text-align: center;
+            font-size: 25px;
+        }
+        .countdown p {
+            margin: 0px;
+        }
+        h2{
+            color: rgb(56, 54, 54);
+        }
+        input{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: none;
+        }
+        button{
+            border-radius: 5px;
+            background: rgb(141,193,57);
+            padding: 10px 10px;
+            margin: 15px;
+            border: none;
+            border-bottom: 2px;
+            border-color: rgb(101,135,40);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="badge">
+                <img src="images/badge.png" alt="">
+            </div>
+            <h1 class="title">
+                Curso de React.js
+            </h1>
+            <div class="description">
+                <p>React es una de las librerías más utilizadas hoy en día para crear aplicaciones web. En este curso podrás dominar la creación de aplicaciones a través de un proyecto que te ayudará a explotar todas las capacidades de esta librería.</p>
+            </div>
+            <form class="form">
+                <h2>
+                    Registro a Platzi
+                </h2>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo Electronico">
+                <button type="submit">Comienza ahora</button>
+            </form>
+            <div class="countdown">
+                <p>Lanzamiento</p>
+                <p>01d:14h:58m:12s</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
