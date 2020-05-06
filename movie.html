@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 8% 92%;
+            grid-template-areas:    "header header"
+                                    "left main";
+            height: 100vh;
+        }
+        .header {
+            border: 1px solid red;
+            grid-area: header;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            
+        }
+        .icon {
+            display: grid;
+            grid-template-columns: 30%;
+            border: 1px solid red;
+            justify-content: center;
+        }
+        .icon img {
+            max-height: 100%;
+        }
+        .input {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input input {
+            font-size: 1.3em;
+            width: 80%;
+            border: slategrey 1px solid;
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .account {
+            border: 1px solid red;
+            /* display: flex; */
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 7%;
+        }
+        .account span {
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+        .account img {
+            max-height: 50%;
+            border-radius: 50px;
+            /* margin-top: 5%; */
+            /* margin-bottom: -5%; */
+            /* vertical-align: middle; */
+
+        }
+        .left {
+            grid-area: left;
+            border: 1px solid red;
+            display: grid;
+            grid-auto-flow: row;
+        }
+        .main {
+            border: 1px solid red;
+            grid-area: main;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-auto-flow: row;
+        }
+        .boton {
+            border: 1px solid red;
+        }
+        .seccion {
+            border: 1px solid red;
+            display: grid;
+            grid-template-rows: 20% 80%;
+        }
+        .seccion_title {
+            border: 1px solid red;
+        }
+        .seccion_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .movie {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <img src="images/stremio.png" alt="stremio.icon">
+            </div>
+            <div class="input">
+                    <input type="text" placeholder="Busca tu peli, actor o director favorito">
+            </div>
+            <div class="account">
+                <span>Cristian Davila</span>
+                <img src="images/account_ico.jpg" alt="account_ico">
+            </div>
+        </div>
+        <div class="left">
+            <div class="boton home">
+
+            </div>
+            <div class="boton trending">
+
+            </div>
+            <div class="boton like">
+
+            </div>
+            <div class="boton settings">
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="seccion ahora_en_el_cine">
+                <div class="seccion_title">
+
+                </div>
+                <div class="seccion_content">
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                </div>
+            </div>
+            <div class="seccion aclamadas_por_la_critica">
+                <div class="seccion_title">
+                    
+                </div>
+                <div class="seccion_content">
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                </div>
+            </div>
+            <div class="seccion no_te_debes_perder">
+                <div class="seccion_title">
+                    
+                </div>
+                <div class="seccion_content">
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                    <div class="movie"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
