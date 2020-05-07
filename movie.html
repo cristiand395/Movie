@@ -5,38 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
     <style>
+        body{
+            margin: 0px;
+        }
         .container {
             display: grid;
-            grid-template-columns: 10% 90%;
+            grid-template-columns: 5% 95%;
             grid-template-rows: 8% 92%;
             grid-template-areas:    "header header"
                                     "left main";
             height: 100vh;
         }
         .header {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             grid-area: header;
             display: grid;
             grid-template-columns: 25% 50% 25%;
+            box-shadow: 10px 10px 5px 0px rgba(110,104,110,1);
             
         }
         .icon {
             display: grid;
             grid-template-columns: 30%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             justify-content: center;
         }
         .icon img {
             max-height: 100%;
         }
         .input {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .input input {
-            font-size: 1.3em;
+            font-size: 1.5em;
             width: 80%;
             border: slategrey 1px solid;
             border-radius: 5px;
@@ -45,7 +49,7 @@
             padding-bottom: 3px;
         }
         .account {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             /* display: flex; */
             text-align: center;
             vertical-align: middle;
@@ -53,7 +57,7 @@
         }
         .account span {
             margin-right: 5px;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         .account img {
             max-height: 50%;
@@ -65,34 +69,79 @@
         }
         .left {
             grid-area: left;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: grid;
             grid-auto-flow: row;
+            grid-template-rows: repeat(12, 1fr);
+            background-color: rgb(91,61,109);
+        }
+        .boton {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-rows: 80% 20%;
+            text-align: center;
+            color: white;
+            
+        }
+        .boton img {
+           width: 65%;
+           height: 65%;
+           margin-top: 20px;
+           color: white;
+        }
+        .settings {
+            grid-row: end;
         }
         .main {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             grid-area: main;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             grid-auto-flow: row;
-        }
-        .boton {
-            border: 1px solid red;
+            padding: 20px;
         }
         .seccion {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: grid;
             grid-template-rows: 20% 80%;
         }
         .seccion_title {
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         .seccion_content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
         }
         .movie {
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            max-width: 100%;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .movie_figure {
+            margin: 0px;
+        }
+        .movie img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;   
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+        }
+        .movie_description {
+            background: rgba(137,89,171,.6);
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 40%;
+            bottom: 0px;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
@@ -112,47 +161,139 @@
         </div>
         <div class="left">
             <div class="boton home">
-
+                <div class="boton_image">
+                    <img src="images/home.svg" alt="home">
+                </div>
+                <div>
+                    <span>Home</span>
+                </div>
             </div>
             <div class="boton trending">
-
+                <div>
+                    <img src="images/trending.svg" alt="trending">
+                </div>
+                <div>
+                    <span>trending</span>
+                </div>
             </div>
             <div class="boton like">
-
+                <div>
+                    <img src="images/heart.svg" alt="likes">
+                </div>
+                <div>
+                    <span>Likes</span>
+                </div>
             </div>
             <div class="boton settings">
-
+                <div>
+                    <img src="images/settings.svg" alt="settings">
+                </div>
+                <div>
+                    <span>Settins</span>
+                </div>
             </div>
         </div>
         <div class="main">
             <div class="seccion ahora_en_el_cine">
                 <div class="seccion_title">
-
+                    <h1>Ahora en el Cine</h1>
                 </div>
                 <div class="seccion_content">
-                    <div class="movie"></div>
-                    <div class="movie"></div>
-                    <div class="movie"></div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="seccion aclamadas_por_la_critica">
                 <div class="seccion_title">
-                    
+                    <h1>Aclamadas por la critica</h1>
                 </div>
                 <div class="seccion_content">
-                    <div class="movie"></div>
-                    <div class="movie"></div>
-                    <div class="movie"></div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="seccion no_te_debes_perder">
                 <div class="seccion_title">
-                    
+                    <h1>No te debes perder</h1>
                 </div>
                 <div class="seccion_content">
-                    <div class="movie"></div>
-                    <div class="movie"></div>
-                    <div class="movie"></div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="images/the_joker.png" alt="">
+                        <!-- <figure class="movie_figure">
+                        </figure> -->
+                        <div class="movie_description">
+                            <h2>El Jajas</h2>
+                            <p>Es una película de suspenso y drama psicológico estadounidense de 2019 distribuida por Warner Bros. y basada en el Joker, personaje de DC Comics.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
